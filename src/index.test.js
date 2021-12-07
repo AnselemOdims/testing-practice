@@ -83,24 +83,20 @@ describe('reverse string function', () => {
 
 //CALCULATOR
 describe('Calculator class', ()=> {
-  describe('Add function', ()=> {
 
+  describe('Add function', ()=> {
     test('returns actual value', ()=> {
       expect(calc.add()).toBe(60)
     })
-
     test('returns actual value', ()=> {
       expect(calc.add()===60).toBeTruthy()
     })
-
     test('returns actual value', ()=> {
       expect(calc.add()===50).toBeFalsy()
     })
-
     test('should be greater than 50', ()=> {
       expect(calc.add()).toBeGreaterThan(50)
     })
-
     test('should be greater than first and second', ()=> {
       const first = 10;
       const second = 20
@@ -108,7 +104,6 @@ describe('Calculator class', ()=> {
       expect(calc.add()).toBeGreaterThan(first)
       expect(calc.add()).toBeGreaterThan(second)
     })
-
     test('should be close floating number', ()=> {
       const first = 0.3;
       const second = 0.2;
@@ -118,7 +113,12 @@ describe('Calculator class', ()=> {
   })
 
   describe('Subtract function', ()=> {
-    
+    test('returns actual value', ()=> {
+      expect(calc.subtract()).toBe(40)
+    })
+    test('returns actual value', ()=> {
+      expect(calc.subtract()===40).toBeTruthy()
+    })
   })
   describe('Divide function', ()=> {
     
