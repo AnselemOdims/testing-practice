@@ -1,4 +1,4 @@
-import {stringLength, reverseString} from './index.js';
+import {stringLength, reverseString, capitalize} from './index.js';
 import Calculator from './calculator.js'
 
 const calc = new Calculator(10, 50);
