@@ -89,6 +89,14 @@ describe('Calculator class', ()=> {
       expect(calc.add()).toBe(60)
     })
 
+    test('returns actual value', ()=> {
+      expect(calc.add()===60).toBeTruthy()
+    })
+
+    test('returns actual value', ()=> {
+      expect(calc.add()===50).toBeFalsy()
+    })
+
     test('should be greater than 50', ()=> {
       expect(calc.add()).toBeGreaterThan(50)
     })
