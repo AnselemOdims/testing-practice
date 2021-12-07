@@ -153,7 +153,21 @@ describe('Calculator class', ()=> {
     test('should be less than 50', ()=> {
       expect(calc.divide()).toBeLessThan(10)
     })
+    test('should be less than second and first', ()=> {
+      const first = 10;
+      const second = 30
+      const calc = new Calculator(first, second);
+      expect(calc.divide()).toBeLessThan(first)
+      expect(calc.divide()).toBeLessThan(second)
+    })
+    test('should be close floating number', ()=> {
+      const first = 0.1;
+      const second = 0.4;
+      const calc = new Calculator(first, second);
+      expect(calc.divide()).toBe(4)
+    })
   })
+
   describe('Mutiply function', ()=> {
     
   })
