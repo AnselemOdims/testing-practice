@@ -204,4 +204,7 @@ describe('Capitalize string', ()=> {
   test('should return a string', ()=> {
     expect(typeof(capitalize('hello'))==='string').toBeTruthy()
   })
+  test('should capitalize the first character of a string', ()=> {
+    expect(capitalize('hello')).not.toBe('HellO')
+  })
 })
