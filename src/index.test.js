@@ -1,4 +1,7 @@
 import {stringLength, reverseString} from './index.js';
+import Calculator from './calculator.js'
+
+const calc = new Calculator(10, 50);
 
 describe('stringLength function', ()=> {
   const myString = 'hello';
@@ -51,7 +54,6 @@ describe('stringLength function', ()=> {
 })
 
 
-// REVERSE A STRING FUNCTION
 describe('reverse string function', () => {
   const myString = 'Hello World';
 
@@ -75,5 +77,24 @@ describe('reverse string function', () => {
   
   test('returns a string type', ()=> {
     expect(typeof(reverseString(myString)) === 'string').toBeTruthy()
+  })
+})
+
+
+//CALCULATOR
+describe('Calculator class', ()=> {
+  describe('Add function', ()=> {
+    test('add two values', ()=> {
+      expect(calc.add()).toBe(60)
+    })
+  })
+  describe('Subtract function', ()=> {
+    
+  })
+  describe('Divide function', ()=> {
+    
+  })
+  describe('Mutiply function', ()=> {
+    
   })
 })
