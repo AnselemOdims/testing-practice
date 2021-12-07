@@ -11,4 +11,8 @@ export default class Calculator {
   subtract(){
     return this.second - this.first
   }
+
+  divide(){
+    return this.second/this.first;
+  }
 }
