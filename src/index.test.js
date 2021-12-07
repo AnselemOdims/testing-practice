@@ -175,5 +175,11 @@ describe('Calculator class', ()=> {
     test('returns actual value', ()=> {
       expect(calc.multiply()===500).toBeTruthy()
     })
+    test('returns actual value', ()=> {
+      expect(calc.multiply()===480).toBeFalsy()
+    })
+    test('should be less than 50', ()=> {
+      expect(calc.multiply()).toBeGreaterThan(400)
+    })
   })
 })
