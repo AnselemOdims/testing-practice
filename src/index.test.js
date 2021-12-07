@@ -122,8 +122,21 @@ describe('Calculator class', ()=> {
     test('returns actual value', ()=> {
       expect(calc.subtract()===50).toBeFalsy()
     })
-    test('should be greater than 50', ()=> {
+    test('should be less than 50', ()=> {
       expect(calc.subtract()).toBeLessThan(50)
+    })
+    test('should be less than second and greater than first', ()=> {
+      const first = 10;
+      const second = 30
+      const calc = new Calculator(first, second);
+      expect(calc.subtract()).toBeGreaterThan(first)
+      expect(calc.subtract()).toBeLessThan(second)
+    })
+    test('should be close floating number', ()=> {
+      const first = 0.1;
+      const second = 0.4;
+      const calc = new Calculator(first, second);
+      expect(calc.subtract()).toBeCloseTo(0.3)
     })
   })
   describe('Divide function', ()=> {
