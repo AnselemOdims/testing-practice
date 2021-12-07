@@ -7,4 +7,8 @@ export default class Calculator {
   add() {
     return this.first + this.second
   }
+
+  subtract(){
+    return this.second - this.first
+  }
 }
