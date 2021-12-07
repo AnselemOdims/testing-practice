@@ -52,27 +52,28 @@ describe('stringLength function', ()=> {
 
 
 // REVERSE A STRING FUNCTION
-test('reverse a string', ()=> {
+describe('reverse string function', () => {
   const myString = 'Hello World';
-  expect(reverseString(myString)).toBe('dlroW olleH')
-})
 
-test('reverse a string', ()=> {
-  const myString = '';
-  expect(reverseString(myString)).toBe('')
-})
-
-test('reverse a string', ()=> {
-  const myString = 'Hello';
-  expect(reverseString(myString)).toBe('olleH')
-})
-
-test('reverse a string', ()=> {
-  const myString = 'Hello World';
-  expect(reverseString(myString)).not.toBe('dlroWolleH')
-})
-
-test('reverse a string', ()=> {
-  const myString = 'Hello World';
-  expect(typeof(reverseString(myString)) === 'string').toBeTruthy()
+  test('returns right value', ()=> {
+    expect(reverseString(myString)).toBe('dlroW olleH')
+  })
+  
+  test('returns empty string', ()=> {
+    const myString = '';
+    expect(reverseString(myString)).toBe('')
+  })
+  
+  test('returns right value', ()=> {
+    const myString = 'Hello';
+    expect(reverseString(myString)).toBe('olleH')
+  })
+  
+  test('does not return wrong value', ()=> {
+    expect(reverseString(myString)).not.toBe('dlroWolleH')
+  })
+  
+  test('returns a string type', ()=> {
+    expect(typeof(reverseString(myString)) === 'string').toBeTruthy()
+  })
 })
