@@ -75,3 +75,8 @@ test('reverse a string', ()=> {
   const myString = 'Hello World';
   expect(reverseString(myString)).not.toBe('dlroWolleH')
 })
+
+test('reverse a string', ()=> {
+  const myString = 'Hello World';
+  expect(typeof(reverseString(myString)) === 'string').toBeTruthy()
+})
