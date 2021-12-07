@@ -1,4 +1,4 @@
-import stringLength from './index.js';
+import {stringLength, reverseString} from './index.js';
 
 //run test if valid
 test('function returns a string length if string length is between 1 and 10', () => {
@@ -46,12 +46,17 @@ test('function returns an error if input is an empty string', () => {
 
 test('function returns an error if input is an empty string', () => {
   const myString = 'Hello World';
-  const error = 'Error: Not length not btw 1 and 10';
   expect(typeof(stringLength(`${myString}`)) === 'string').toBeTruthy();
 });
 
 test('function returns an error if input is an empty string', () => {
   const myString = 'Hello World';
-  const error = 'Error: Not length not btw 1 and 10';
   expect(stringLength(`${myString}`)).not.toBeNull();
 });
+
+
+// REVERSE A STRING FUNCTION
+test('reverse a string', ()=> {
+  const myString = 'Hello World';
+  expect(reverseString(myString)).toBe('dlroW olleH')
+})
