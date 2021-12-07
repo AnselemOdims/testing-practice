@@ -13,6 +13,6 @@ export default class Calculator {
   }
 
   divide(){
-    return this.second/this.first;
+    return this.second/this.first
   }
 }

@@ -139,8 +139,20 @@ describe('Calculator class', ()=> {
       expect(calc.subtract()).toBeCloseTo(0.3)
     })
   })
+
   describe('Divide function', ()=> {
-    
+    test('returns actual value', ()=> {
+      expect(calc.divide()).toBe(5)
+    })
+    test('returns actual value', ()=> {
+      expect(calc.divide()===5).toBeTruthy()
+    })
+    test('returns actual value', ()=> {
+      expect(calc.divide()===7).toBeFalsy()
+    })
+    test('should be less than 50', ()=> {
+      expect(calc.divide()).toBeLessThan(10)
+    })
   })
   describe('Mutiply function', ()=> {
     
