@@ -37,3 +37,15 @@ test('function returns an error if string length is not between 1 and 10', () =>
   const error = 'Error: Not length not btw 1 and 10';
   expect(stringLength(`${myString}`)).toBe(error);
 });
+
+test('function returns an error if input is an empty string', () => {
+  const myString = '';
+  const error = 'Error: Not length not btw 1 and 10';
+  expect(stringLength(`${myString}`)).toBe(error);
+});
+
+test('function returns an error if input is an empty string', () => {
+  const myString = 'Hello World';
+  const error = 'Error: Not length not btw 1 and 10';
+  expect(typeof(stringLength(`${myString}`)) === 'string').toBeTruthy();
+});
