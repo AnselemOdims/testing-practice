@@ -24,3 +24,9 @@ test('function returns a string length if string length is between 1 and 10', ()
   const strLength = myString.length;
   expect(stringLength(`${myString}`)).not.toBeNull();
 });
+
+test('function returns a string length if string length is between 1 and 10', () => {
+  const myString = 'hello';
+  const strLength = myString.length;
+  expect(stringLength(`${myString}`)).toEqual(5);
+});
