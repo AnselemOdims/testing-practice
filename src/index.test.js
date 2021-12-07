@@ -19,3 +19,8 @@ test('function returns a number if string length is between 1 and 10', () => {
   expect(typeof(stringLength(`${myString}`)) === 'number').not.toBeFalsy();
 });
 
+test('function returns a string length if string length is between 1 and 10', () => {
+  const myString = 'hello';
+  const strLength = myString.length;
+  expect(stringLength(`${myString}`)).not.toBeNull();
+});
