@@ -84,10 +84,15 @@ describe('reverse string function', () => {
 //CALCULATOR
 describe('Calculator class', ()=> {
   describe('Add function', ()=> {
-    test('add two values', ()=> {
+    test('returns actual value', ()=> {
       expect(calc.add()).toBe(60)
     })
+
+    test('should be greater than 50', ()=> {
+      expect(calc.add()).toBeGreaterThan(50)
+    })
   })
+
   describe('Subtract function', ()=> {
     
   })
