@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/AnselemOdims/testing-practice/issues"
   },
-  "homepage": "https://github.com/AnselemOdims/testing-practice#readme"
+  "homepage": "https://github.com/AnselemOdims/testing-practice#readme",
+  "devDependencies": {
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
 }
