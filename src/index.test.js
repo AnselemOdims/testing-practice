@@ -49,3 +49,9 @@ test('function returns an error if input is an empty string', () => {
   const error = 'Error: Not length not btw 1 and 10';
   expect(typeof(stringLength(`${myString}`)) === 'string').toBeTruthy();
 });
+
+test('function returns an error if input is an empty string', () => {
+  const myString = 'Hello World';
+  const error = 'Error: Not length not btw 1 and 10';
+  expect(stringLength(`${myString}`)).not.toBeNull();
+});
