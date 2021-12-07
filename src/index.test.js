@@ -84,12 +84,28 @@ describe('reverse string function', () => {
 //CALCULATOR
 describe('Calculator class', ()=> {
   describe('Add function', ()=> {
+
     test('returns actual value', ()=> {
       expect(calc.add()).toBe(60)
     })
 
     test('should be greater than 50', ()=> {
       expect(calc.add()).toBeGreaterThan(50)
+    })
+
+    test('should be greater than first and second', ()=> {
+      const first = 10;
+      const second = 20
+      const calc = new Calculator(first, second);
+      expect(calc.add()).toBeGreaterThan(first)
+      expect(calc.add()).toBeGreaterThan(second)
+    })
+
+    test('should be close floating number', ()=> {
+      const first = 0.3;
+      const second = 0.2;
+      const calc = new Calculator(first, second);
+      expect(calc.add()).toBeCloseTo(0.5)
     })
   })
 
