@@ -119,6 +119,12 @@ describe('Calculator class', ()=> {
     test('returns actual value', ()=> {
       expect(calc.subtract()===40).toBeTruthy()
     })
+    test('returns actual value', ()=> {
+      expect(calc.subtract()===50).toBeFalsy()
+    })
+    test('should be greater than 50', ()=> {
+      expect(calc.subtract()).toBeLessThan(50)
+    })
   })
   describe('Divide function', ()=> {
     
