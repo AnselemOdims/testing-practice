@@ -30,3 +30,10 @@ test('function returns a string length if string length is between 1 and 10', ()
   const strLength = myString.length;
   expect(stringLength(`${myString}`)).toEqual(5);
 });
+
+//Invalid tests
+test('function returns an error if string length is not between 1 and 10', () => {
+  const myString = 'Hello World';
+  const error = 'Error: Not length not btw 1 and 10';
+  expect(stringLength(`${myString}`)).toBe(error);
+});
