@@ -60,3 +60,8 @@ test('reverse a string', ()=> {
   const myString = 'Hello World';
   expect(reverseString(myString)).toBe('dlroW olleH')
 })
+
+test('reverse a string', ()=> {
+  const myString = 'Hello';
+  expect(reverseString(myString)).toBe('olleH')
+})
