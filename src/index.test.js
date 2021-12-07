@@ -81,7 +81,6 @@ describe('reverse string function', () => {
 })
 
 
-//CALCULATOR
 describe('Calculator class', ()=> {
 
   describe('Add function', ()=> {
@@ -194,5 +193,12 @@ describe('Calculator class', ()=> {
       const calc = new Calculator(first, second);
       expect(calc.multiply()).toBeCloseTo(0.04)
     })
+  })
+})
+
+
+describe('Capitalize string', ()=> {
+  test('should capitalize the first character of a string', ()=> {
+    expect(capitalize('hello')).toBe('Hello')
   })
 })
