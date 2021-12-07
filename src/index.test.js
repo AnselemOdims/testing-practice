@@ -191,4 +191,7 @@ describe('Capitalize string', () => {
 	test('should capitalize the first character of a string', () => {
 		expect(capitalize('hello')).not.toBe('HellO');
 	});
+  test('should throw error if type is not a string', () => {
+		expect(() => capitalize(20)).toThrow()
+	});
 });
