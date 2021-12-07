@@ -15,4 +15,8 @@ export default class Calculator {
   divide(){
     return this.second/this.first
   }
+
+  multiply() {
+    return this.first*this.second
+  }
 }
