@@ -5,6 +5,11 @@ const stringLength = string =>  string.length >= 1 && string.length <=10 ?  stri
 const reverseString = string => string.split('').reverse().join('')
 
 //capitalize string
-const capitalize = string => string.charAt(0).toUpperCase() + string.slice(1)
-
+const capitalize = string => {
+  if(typeof(string)==='string') {
+    return string.charAt(0).toUpperCase() + string.slice(1) 
+  } else {
+      throw new Error('Error')
+  }
+}
 module.exports = {stringLength, reverseString, capitalize}
