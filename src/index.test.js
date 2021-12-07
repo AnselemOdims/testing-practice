@@ -169,6 +169,11 @@ describe('Calculator class', ()=> {
   })
 
   describe('Mutiply function', ()=> {
-    
+    test('returns actual value', ()=> {
+      expect(calc.multiply()).toBe(500)
+    })
+    test('returns actual value', ()=> {
+      expect(calc.multiply()===500).toBeTruthy()
+    })
   })
 })
